@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[never615]]></title>
-  <subtitle><![CDATA[知行合一]]></subtitle>
+  <subtitle><![CDATA[个人小站]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-02-24T14:19:18.000Z</updated>
+  <updated>2016-02-24T17:43:49.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -15,237 +15,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[JNI01]]></title>
-    <link href="http://never615.com/2016/02/24/JNI01/"/>
-    <id>http://never615.com/2016/02/24/JNI01/</id>
-    <published>2016-02-24T14:19:18.000Z</published>
-    <updated>2016-02-24T14:19:18.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"></a>什么是JNI</h2><blockquote>
-<p>java native interface ： Java本地接口<br>Java代码不可以直接操作硬件，只操作虚拟机</p>
+    <title><![CDATA[个人小站建站记]]></title>
+    <link href="http://never615.com/2016/02/25/%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%BB%BA%E7%AB%99%E8%AE%B0/"/>
+    <id>http://never615.com/2016/02/25/个人小站建站记/</id>
+    <published>2016-02-24T17:43:49.000Z</published>
+    <updated>2016-02-24T17:43:49.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
+<p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</p>
 </blockquote>
-<h2 id="为什么用JNI"><a href="#为什么用JNI" class="headerlink" title="为什么用JNI"></a>为什么用JNI</h2><ul>
-<li>工资高</li>
-<li>操作底层硬件 java代码调用c代码 <blockquote>
-<p>OBD : onboard debug bridge 在线调试桥</p>
-</blockquote>
-</li>
-<li>复用优秀的c代码库<blockquote>
-<p>sqlite, webkit, opencore, 7zip, opencv, ffmepg</p>
-</blockquote>
-</li>
-<li>特殊的应用场景<blockquote>
-<p>java反编译很容易，c代码反编译比较困难。网银，支付宝，军工。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="怎么用"><a href="#怎么用" class="headerlink" title="怎么用"></a>怎么用</h2><p>Java – c/c++</p>
-<ul>
-<li>熟悉Java</li>
-<li>熟悉c或者c++</li>
-<li>熟悉jni的规范</li>
-<li>使用常见的工具（NDK)<blockquote>
-<p>NDK：native develop kits 本地开发工具集</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="C语言的基本数据类型"><a href="#C语言的基本数据类型" class="headerlink" title="C语言的基本数据类型"></a>C语言的基本数据类型</h2><h3 id="注意和java的区别，和代替"><a href="#注意和java的区别，和代替" class="headerlink" title="注意和java的区别，和代替"></a>注意和java的区别，和代替</h3><ul>
-<li>java数据类型的大小<blockquote>
-<p>byte 8位 short 16位 int 32位 long 64位 float 32位 double 64位 char 16位 boolean  8位 </p>
-</blockquote>
-</li>
-<li>C数据类型的大小<blockquote>
-<p>char 1个字节, int 4个字节, float 4个字节, double 8个字节, long 4个字节, short 2个字节<br>void, signed, unsigned,数据类型的修饰符 </p>
-</blockquote>
-</li>
-<li>注意<blockquote>
-<p>c99 c中是没有Boolean类型的，所以我们用0表示FALSE，用1表示true</p>
-</blockquote>
-</li>
-<li>总结<blockquote>
-<p> c代码的int和java代码的int完全一致，长度相同，所以可以互相表示，互相的代替。<br>c代码的short类型表示 java代码的char类型和short类型。<br>c代码的float 和 double 与java完全一致 ，可以互相表示<br>c代码用 long long 类型表示java的long 类型。 </p>
-</blockquote>
-</li>
-</ul>
-<h2 id="c语言的输出函数"><a href="#c语言的输出函数" class="headerlink" title="c语言的输出函数"></a>c语言的输出函数</h2><blockquote>
-<p>%d  -  int<br>%ld ¨ long int<br>%c  - char<br>%f -  float<br>%u ¨  无符号<br>%hd ¨ 短整型<br>%lf   double类型<br>%#x ¨ 十六进制显示数据<br>%o -  8进制显示数据<br>%s -  字符串</p>
-</blockquote>
-<h2 id="c语言的输入函数"><a href="#c语言的输入函数" class="headerlink" title="c语言的输入函数"></a>c语言的输入函数</h2><h2 id="什么是指针"><a href="#什么是指针" class="headerlink" title="什么是指针"></a>什么是指针</h2><blockquote>
-<p>指针就是一个内存地址<br>在数据类型的后面加上一个<em>代表的是当前数据类型的指针变量。<br>在一个指针变量的前面写</em>号 代表把这个地址的数据取出来。</p>
-</blockquote>
-<pre><code>int i;//声明一块内存空间  整形变量的作用就是用来存放一个int类型的数据， 别名叫 i  
-i = 3;//在i表示的内存空间里面 存放一个数据 值是3，数据类型只能是int类型。 
-int* p;//声明一个指针变量。  指针变量的作用就是用来存放一个指针类型的数据。 
-p = &amp;i;//把i变量在内存空间中的地址取出来 放在 p这个指针变量里面。 
-printf(&quot;i在内存中的地址为：%#x\n&quot;,p); 
-system(&quot;pause&quot;);//调用系统指令 
-</code></pre><h2 id="指针和指针变量的概念"><a href="#指针和指针变量的概念" class="headerlink" title="指针和指针变量的概念"></a>指针和指针变量的概念</h2><blockquote>
-<p>指针是地址<br>地址就是内存单元的编号<br>指针变量存放地址<br>指针是地址，传递地址其实就是传递变量的引用</p>
-</blockquote>
-<h2 id="指针和数组的关系"><a href="#指针和数组的关系" class="headerlink" title="指针和数组的关系"></a>指针和数组的关系</h2><ul>
-<li><p>数组的名称，代表的是数组的首地址，其实我们可以把数组名，理解成指针变量。</p>
-<pre><code>int name[] = {1,2};
-//数组名就是数组的首地址
-printf(&quot;name[0]=%d\n&quot;,*(name)); //1
-printf(&quot;name[0]=%d\n&quot;,name[0]); //1
-//由0x28ff18,0x28ff1c可以看出内存是连续的内存空间
-printf(&quot;name[0]=%#x\n&quot;,&amp;name[0]); //0x28ff18
-printf(&quot;name[0]=%d\n&quot;,*(name+1)); //1
-printf(&quot;name[1]=%d\n&quot;,name[1]);  //1
-printf(&quot;name[0]=%#x\n&quot;,&amp;name[1]); //0x28ff1c
-</code></pre></li>
-<li>数组是连续的内存空间，数组名就是数组的首地址</li>
-</ul>
-<h2 id="常见的错误"><a href="#常见的错误" class="headerlink" title="常见的错误"></a>常见的错误</h2><ul>
-<li><p>不同指针类型间赋值</p>
-<pre><code>int i = 5;
-int* q = &amp;i;
-
-正确 
-int* p = q;
-printf(&quot;*p=%d\n&quot;,*p); //5
-
-//不能把int类型的指针变量赋值给float类型的指针变量 
-//float* p = q; 
-//printf(&quot;*p=%f\n&quot;,*p); //0.00000 
-
-//输出的格式变量类型一定要匹配 
-//float* p = q; 
-//printf(&quot;*q=%f\n&quot;,*q); //0.00000 
-</code></pre></li>
-<li>野指针(没有给指针分配地址)<pre><code>int* q; //野指针
-printf(&quot;*q=%d\n&quot;,*q); 
-</code></pre></li>
-<li>内存幻影<br><img src="http://i.imgur.com/93IG6IY.png" alt=""><pre><code>main(){
-//用来保存子函数i的地址 
-int* q;
-fun(&amp;q);
-/*printf(&quot;sadas&quot;);若加了这个输出语句就会出错，因为
-本来是获取不到子函数i的地址的，因为fun函数运行结束，那么
-该方法中的变量都销毁了，但由于程序执行过快，所以还没等
-变量被回收，主函数就已经输出了。而执行了输出语句刚好让系统
-有了时间去回收fun函数中的变量*/
-printf(&quot;*q=%d\n&quot;,*q);
-}
-fun(int** r){
-  int i = 9000;
-  printf(&quot;子函数，i的地址：%#x\n&quot;,&amp;i);
-  //把i的地址放在主函数的q变量里面
-  *r = &amp;i; 
-}
-</code></pre></li>
-</ul>
-<h2 id="号的含义"><a href="#号的含义" class="headerlink" title="*号的含义"></a>*号的含义</h2><ul>
-<li>*号 乘法标示符  3*5 = 15；</li>
-<li><p>* 号放在一个数据类型的后面 </p>
-<blockquote>
-<p>int* int数据类型的指针变量<br>double* double数据类型的指针变量<br>float* float数据类型的指针变量<br>int**  int*指针变量数据类型的指针变量</p>
-</blockquote>
-</li>
-<li><p>*号 放在一个指针变量的前面</p>
-<blockquote>
-<p>int* p = 10; 现在若输出*p就是把p变量里面存放的地址里面的数据取出来。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h2><ul>
-<li>下面的代码是没有语法错误的<pre><code>typedef int aa; //表示可以用aa去代替int类型
-typedef long bb; //表示可以用bb去代替long类型
-main(){
-  aa xx = 3;
-  bb yy = 4;
-  printf(&quot;%d\n&quot;,xx); //3
-  printf(&quot;%d\n&quot;,yy); //4
-}
-</code></pre></li>
-</ul>
-<h2 id="内存空间分为两种："><a href="#内存空间分为两种：" class="headerlink" title="内存空间分为两种："></a>内存空间分为两种：</h2><ul>
-<li><p>静态内存</p>
-<blockquote>
-<p>程序执行操作系统分配的内存。<br>int i; int j; double d;<br>在栈内存里面：连续的内存空间<br>大小有限制 2M一下</p>
-</blockquote>
-</li>
-<li><p>动态内存</p>
-<blockquote>
-<p>一般程序员主动申请的内存。<br>java —&gt;new<br>c    —&gt; malloc<br>在堆内存里面（heap) 不连续的内存空间。<br>大小一般没有限制 在pcwindow系统上可以是全部的电脑内存。</p>
-<pre><code>#include&lt;stdio.h&gt;
-#include&lt;malloc.h&gt;
-void printArr(int* arr, int len){
-    int i;
-    for(i=0;i&lt;len;i++){
-        printf(&quot;arr[%d]=%d\n&quot;,i,*(arr+1));
-    }
-}
-main(){
-    int i = 3;//声明一个内存控件,里面存的是i数据为3的int类型 
-    //malloc(1)从堆内存里面申请1个byte的空间
-    int* arr = malloc(2*sizeof(int));
-    //上面共占用了20个byte的内存空间,4个byte的栈内存,16个byte的堆内存
-    //所有类型了地址变量都为4 
-    printf(&quot;地址变量的大小为：%d\n&quot;,sizeof(arr)); //4
-    printf(&quot;申请的内存地址为：%#x\n&quot;,arr); //0x20db8
-    arr[0] = 1;
-    printf(&quot;arr[0]的地址为：%#x\n&quot;,&amp;arr[0]); //0x20db8
-    arr[1] = 2; 
-    printf(&quot;arr[1]的地址为：%#x\n&quot;,&amp;arr[1]); //0x20dbc
-    printArr(arr,2);
-    //程序员手动释放内存
-    free(arr);
-    printArr(arr,2); 
- }
-</code></pre></blockquote>
-</li>
-</ul>
-<h2 id="练习项目"><a href="#练习项目" class="headerlink" title="练习项目"></a>练习项目</h2><pre><code>#include&lt;stdio.h&gt;
-#include&lt;malloc.h&gt;    
-void printArr(int* arr, int len){
-      int i;
-      for(i=0;i&lt;len;i++){
-            printf(&quot;第%d的学生学号为%d\n&quot;, i,*(arr+i));
-      }
- }
-  main(){
-      printf(&quot;----------学生管理系统------------\n&quot;);
-      int number;
-      int count = 3;
-      int allStudent[count];
-      int i;
-      for(i=0;i&lt;3;i++){
-          printf(&quot;请输入第[%d]个学生的学号\n&quot;,i);
-          scanf(&quot;%d&quot;,&amp;number);
-         allStudent[i] = number;    
-      }
-      printArr(allStudent,count);
-      printf(&quot;请输入要添加学生的数量&quot;);
-      int addNumber;
-      scanf(&quot;%d&quot;,&amp;addNumber);
-      realloc(allStudent,sizeof(int)*(addNumber+count));
-      for(i=count;i&lt;(addNumber+count);i++){
-          printf(&quot;请输入第[%d]个学生的学号\n&quot;,i);
-          scanf(&quot;%d&quot;,&amp;number);
-          allStudent[i] = number;
-      } 
-      printArr(allStudent,addNumber+count);    
-  }
-</code></pre><ul>
-<li><p>学会了realloc函数的运用</p>
-<blockquote>
-<p>若realloc函数准备重新分配的内存时，这个方法并不会删除内存中已存在的数据例如：</p>
-</blockquote>
-<pre><code>main(){
-  int i[2];
-  i[0] = 1;
-  i[1] = 2;
-  realloc(i,12);
-  i[2] = 3;
-  printArr(i,3);
-  //output 1,2,3
-}
-</code></pre></li>
-</ul>
+<p>小站是用git page和hexo搭建的，使用的的主题是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>。我选择主题最重要的标准就是文章的目录好不好用，哈哈，所以看了很多之后选择了这个。</p>
+<p>当然要不是因为学的那点web前端知识差不多都还给老师了，不然我就~￥#$*&amp;^…</p>
+<hr>
+<p>未来计划业余技术时间主要在以下两个个方面，这些也将伴随着小站内容的丰富。</p>
+<p><strong>web</strong></p>
+<p>最近也计划加深学习一下web知识，一来是为了自己玩的更爽，二来是因为随着学习的深入，越来越发觉编程思想的相通，而相比android，web发展则要久远的多，过去一段时间在android圈一个一个火起来的东西，思想在web圈由来已有，三来也是为之后跨平台的学习做一个铺垫。</p>
+<p><strong>android</strong></p>
+<p>此外也计划把之前学习的android知识在系统的整理一下，同时也买了两本android的书和一本讲android源码设计模式的，当做工具书和查漏补缺，完善我的知识体系，我是比较喜欢记笔记的，人生苦短，我可不想全部都装脑子里。。。如果用的比较少忘记了，很快查一下笔记就好了。</p>
+<p><img src="个人小站建站记/wiznote.png" alt="为知笔记"><img src="个人小站建站记/webpage1.png" alt="网络书签1"><img src="个人小站建站记/webpage2.png" alt="网络书签2"></p>
+<p><em>主要精力应该还是在android这边，android这边感觉现在有点瓶颈，主要应该是积累的还不够，导致最近在插件化方面的研究有些吃力</em></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"></a>什么是JNI</h2><blockquote>
-<p>java native interface ： Java本地接口<br>Java代]]>
+    <![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
+<p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</]]>
     </summary>
     
   </entry>
