@@ -4,7 +4,7 @@
   <subtitle><![CDATA[知行合一]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-02-24T07:24:19.000Z</updated>
+  <updated>2016-02-24T14:19:18.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -15,12 +15,12 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[jni01]]></title>
+    <title><![CDATA[JNI01]]></title>
     <link href="http://never615.com/2016/02/24/JNI01/"/>
     <id>http://never615.com/2016/02/24/JNI01/</id>
-    <published>2016-02-24T07:24:19.000Z</published>
-    <updated>2016-02-24T07:24:19.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h1><h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"></a>什么是JNI</h2><blockquote>
+    <published>2016-02-24T14:19:18.000Z</published>
+    <updated>2016-02-24T14:19:18.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"></a>什么是JNI</h2><blockquote>
 <p>java native interface ： Java本地接口<br>Java代码不可以直接操作硬件，只操作虚拟机</p>
 </blockquote>
 <h2 id="为什么用JNI"><a href="#为什么用JNI" class="headerlink" title="为什么用JNI"></a>为什么用JNI</h2><ul>
@@ -244,7 +244,8 @@ void printArr(int* arr, int len){
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h1><h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"><]]>
+    <![CDATA[<h2 id="什么是JNI"><a href="#什么是JNI" class="headerlink" title="什么是JNI"></a>什么是JNI</h2><blockquote>
+<p>java native interface ： Java本地接口<br>Java代]]>
     </summary>
     
   </entry>

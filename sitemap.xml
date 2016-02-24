@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://never615.com/2016/02/24/JNI01/</loc>
+    <lastmod>2016-02-24T14:19:18.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://never615.com/tags/index.html</loc>
     <lastmod>2016-02-24T09:25:54.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://never615.com/categories/index.html</loc>
     <lastmod>2016-02-24T09:25:37.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://never615.com/2016/02/24/JNI01/</loc>
-    <lastmod>2016-02-24T07:24:19.000Z</lastmod>
   </url>
   
 </urlset>
