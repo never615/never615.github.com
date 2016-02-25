@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[never615]]></title>
-  <subtitle><![CDATA[个人小站]]></subtitle>
+  <subtitle><![CDATA[创造价值]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-02-24T18:57:10.000Z</updated>
+  <updated>2016-02-25T16:43:09.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[个人小站建站记]]></title>
-    <link href="http://never615.com/2016/02/25/%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%BB%BA%E7%AB%99%E8%AE%B0/"/>
-    <id>http://never615.com/2016/02/25/个人小站建站记/</id>
-    <published>2016-02-24T18:57:10.000Z</published>
-    <updated>2016-02-24T18:57:10.000Z</updated>
+    <link href="http://never615.com/2016/02/26/%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%BB%BA%E7%AB%99%E8%AE%B0/"/>
+    <id>http://never615.com/2016/02/26/个人小站建站记/</id>
+    <published>2016-02-25T16:43:09.000Z</published>
+    <updated>2016-02-25T16:43:09.000Z</updated>
     <content type="html"><![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
 <p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</p>
 </blockquote>
@@ -30,13 +30,17 @@
 <p>最近也计划复习复习web并加深学习一下，一来是为了自己玩的更爽，二来是因为随着学习的深入，越来越发觉编程思想的相通，而相比android，web发展则要久远的多，过去一段时间在android圈一个一个火起来的东西，思想在web圈由来已有，三来也是为之后跨平台的学习做一个铺垫。</p>
 <p><strong>android</strong></p>
 <p>此外也计划把之前学习的android知识在系统的整理一下，同时也买了两本android的书和一本讲android源码设计模式的，当做工具书和查漏补缺，完善我的知识体系，我是比较喜欢记笔记的，人生苦短，我可不想全部都装脑子里。。。如果用的比较少忘记了，很快查一下笔记就好了。</p>
-<img src="/2016/02/25/个人小站建站记/ScreenShot.png" alt="ScreenShot.png" title="">
+<img src="/2016/02/26/个人小站建站记/ScreenShot.png" alt="ScreenShot.png" title="">
 <p><em>主要精力应该还是在android这边，android这边感觉现在有点瓶颈，主要应该是积累的还不够，导致最近在插件化方面的研究有些吃力</em></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
 <p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</]]>
     </summary>
+    
+      <category term="随笔" scheme="http://never615.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="随笔" scheme="http://never615.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
