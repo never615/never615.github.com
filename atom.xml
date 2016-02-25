@@ -4,7 +4,7 @@
   <subtitle><![CDATA[创造价值]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-02-25T16:43:09.000Z</updated>
+  <updated>2016-02-25T17:28:20.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -18,14 +18,13 @@
     <title><![CDATA[个人小站建站记]]></title>
     <link href="http://never615.com/2016/02/26/%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%E5%BB%BA%E7%AB%99%E8%AE%B0/"/>
     <id>http://never615.com/2016/02/26/个人小站建站记/</id>
-    <published>2016-02-25T16:43:09.000Z</published>
-    <updated>2016-02-25T16:43:09.000Z</updated>
+    <published>2016-02-25T17:28:20.000Z</published>
+    <updated>2016-02-25T17:28:20.000Z</updated>
     <content type="html"><![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
 <p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</p>
 </blockquote>
 <p>小站是用git page和hexo搭建的，使用的的主题是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>。我选择主题最重要的标准就是文章的目录好不好用，哈哈，所以看了很多之后选择了这个。</p>
-<hr>
-<p>未来计划业余技术时间主要在以下两个个方面，这些也将伴随着小站内容的丰富。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p>未来计划业余技术时间主要在以下两个个方面，这些也将伴随着小站内容的丰富。</p>
 <p><strong>web</strong></p>
 <p>最近也计划复习复习web并加深学习一下，一来是为了自己玩的更爽，二来是因为随着学习的深入，越来越发觉编程思想的相通，而相比android，web发展则要久远的多，过去一段时间在android圈一个一个火起来的东西，思想在web圈由来已有，三来也是为之后跨平台的学习做一个铺垫。</p>
 <p><strong>android</strong></p>
@@ -35,7 +34,11 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="个人小站建站记"><a href="#个人小站建站记" class="headerlink" title="个人小站建站记"></a>个人小站建站记</h1><blockquote>
-<p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</]]>
+<p>折腾了两天终于搭起了自己的第一个站点，恩，一件让我充满幸福感的事☺️。</p>
+</blockquote>
+<p>小站是用git page和hexo搭建的，使用的的主题是<a href="https://github.com/iissnan/hexo-theme-next">NexT</a>。我选择主题最重要的标准就是文章的目录好不好用，哈哈，所以看了很多之后选择了这个。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a>]]>
+    
     </summary>
     
       <category term="随笔" scheme="http://never615.com/tags/%E9%9A%8F%E7%AC%94/"/>
