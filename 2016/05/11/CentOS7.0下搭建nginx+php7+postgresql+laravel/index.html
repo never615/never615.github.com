@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>项目总结、阶段小结 | never615</title>
+  <title>CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境 | never615</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="距离上一个项目大体完成已经有一段时间了，一直说总结一下却一直拖着，最近已经开始php的学习了，觉得实在不能再拖了，需要对上一个阶段总结一下，然后好好的开始下一个阶段了。">
+  <meta name="description" content="只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="项目总结、阶段小结">
-<meta property="og:url" content="http://never615.com/2016/04/06/项目总结/index.html">
+<meta property="og:title" content="CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境">
+<meta property="og:url" content="http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/index.html">
 <meta property="og:site_name" content="never615">
-<meta property="og:description" content="距离上一个项目大体完成已经有一段时间了，一直说总结一下却一直拖着，最近已经开始php的学习了，觉得实在不能再拖了，需要对上一个阶段总结一下，然后好好的开始下一个阶段了。">
-<meta property="og:image" content="http://never615.com/2016/04/06/项目总结/架构1.png">
-<meta property="og:image" content="http://never615.com/2016/04/06/项目总结/架构2.png">
-<meta property="og:updated_time" content="2016-04-05T17:30:26.000Z">
+<meta property="og:description" content="只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。">
+<meta property="og:updated_time" content="2016-05-10T17:10:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="项目总结、阶段小结">
-<meta name="twitter:description" content="距离上一个项目大体完成已经有一段时间了，一直说总结一下却一直拖着，最近已经开始php的学习了，觉得实在不能再拖了，需要对上一个阶段总结一下，然后好好的开始下一个阶段了。">
+<meta name="twitter:title" content="CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境">
+<meta name="twitter:description" content="只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。">
   
     <link rel="alternative" href="/atom.xml" title="never615" type="application/atom+xml">
   
@@ -230,11 +228,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-项目总结" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-CentOS7.0下搭建nginx+php7+postgresql+laravel" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/06/项目总结/" class="article-date">
-      <time datetime="2016-04-05T17:30:26.000Z" itemprop="datePublished">2016-04-06</time>
+      <a href="/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/" class="article-date">
+      <time datetime="2016-05-10T17:10:13.000Z" itemprop="datePublished">2016-05-11</time>
 </a>
     </div>
   
@@ -247,7 +245,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      项目总结、阶段小结
+      CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境
     </h1>
   
 
@@ -256,13 +254,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/android/">android</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mvp/">mvp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/简洁架构/">简洁架构</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web环境搭建/">web环境搭建</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -272,63 +270,109 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>距离上一个项目大体完成已经有一段时间了，一直说总结一下却一直拖着，最近已经开始php的学习了，觉得实在不能再拖了，需要对上一个阶段总结一下，然后好好的开始下一个阶段了。<br><a id="more"></a></p>
-<h2 id="项目架构"><a href="#项目架构" class="headerlink" title="项目架构"></a>项目架构</h2></blockquote>
-<p>项目的架构参考的是<a href="http://zhuanlan.zhihu.com/p/20001838" target="_blank" rel="external">简洁架构</a>(我最早就是在这个文章看到的介绍，真正使用已经是15年9月低了)，P层使用的是MVP。</p>
-<img src="/2016/04/06/项目总结/架构1.png" alt="架构1.png" title="">
-<img src="/2016/04/06/项目总结/架构2.png" alt="架构2.png" title="">
-<p>实践的结果还是十分满意的，项目的结构很清晰，各层各司其职，井井有条。并且我开始习惯写接口，使用抽象的逻辑先完成整个框架的搭建，具体的实现分成一个一个的任务，可以让实现具体功能的人不用理解整个复杂的业务流程，也能保证开发的顺利进行。大大保证了项目的质量和开发的效率。</p>
-<p>当然中间也有崎岖探索，随着一步步的实践，自己的理解也慢慢加深。当初开始使用的时候和后期项目差不多完成的时候，我又看了很多项目和架构的文章代码。领域驱动设计、mvvm、变形的mvp、插件化开发、跨平台等等。</p>
-<p>到此我才越来越觉得编程思想的相通，越来越多的看到的东西并不是android圈或者纯android开发者的讨论了，很多web开发者的文章讨论。在web中早已经使用的IOC、数据绑定、mvvm等等再android开发中也渐渐的开始讨论到越来越多、使用的越来越多。</p>
-<p>而这些在我近期开始php学习的时候也愈发显现出来，让我可以更快的接收概念理解上手。</p>
-<h2 id="第三方轮子"><a href="#第三方轮子" class="headerlink" title="第三方轮子"></a>第三方轮子</h2><p>因为是小公司，所以基础库都是一些主流的轮子。</p>
+        <p>只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。<br><a id="more"></a></p>
+<p>安装步骤大体分为以下几步：</p>
+<ol>
+<li>基本环境配置</li>
+<li>安装php-fpm（同时安装了php） </li>
+<li>安装composer</li>
+<li>安装postgresql并配置</li>
+<li>安装nginx</li>
+<li>创建一个laravel应用并配置nginx</li>
+</ol>
+<h2 id="CentOs基本环境配置"><a href="#CentOs基本环境配置" class="headerlink" title="CentOs基本环境配置"></a>CentOs基本环境配置</h2><p>在CentOS上管理软件可以使用yum作为包管理工具，可以用命令查询、删除、下载、安装、删除系统上的软件。</p>
+<p>yum的使用：<a href="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" target="_blank" rel="external">yum参考手册</a></p>
+<p>系统官方的资源库提供的软件不能满足我们的需求，比如搜索php70u，会提示NO Matches found，所以我们要添加额外的资源库。</p>
+<p>在这里可以找到ius的包，<a href="https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/repoview/ius-release.html" target="_blank" rel="external">https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/repoview/ius-release.html</a>。</p>
+<p>复制包地址，使用wget下载，会下载到当前目录。</p>
+<pre><code>wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm
+</code></pre><p>然后使用命令安装：</p>
+<pre><code>rpm -ivh ius-release-1.0-10.ius.el6.noarch.rpm epel-release-6-5.noarch.rpm
+</code></pre><h2 id="安装php-fpm和php-安装php常用扩展"><a href="#安装php-fpm和php-安装php常用扩展" class="headerlink" title="安装php-fpm和php,安装php常用扩展"></a>安装php-fpm和php,安装php常用扩展</h2><p>搜索php-fpm：</p>
+<pre><code>yum search php70u-fpm
+</code></pre><p>安装，因为yum会自动解决软件之间的依赖，所以会自动安装php</p>
+<pre><code>yum install php70u-fpm
+</code></pre><p>查看php-fpm的状态：</p>
+<pre><code>systemctl status php-fpm
+</code></pre><p>启动php——fpm:</p>
+<pre><code>systemctl start php-fpm
+</code></pre><p>设置开机启动：</p>
+<pre><code>systemctl enable php-fpm
+</code></pre><p>安装php常用的扩展：</p>
+<pre><code>yum install php70u-gd php70u-mysqlnd php70u-pdo php70u-mcrypt php70u-mbstring php70u-json php70u-cli -y
+</code></pre><p>安装完成需要重新加载php-fpm:</p>
+<pre><code>systemctl reload php-fpm
+</code></pre><h2 id="安装composer"><a href="#安装composer" class="headerlink" title="安装composer"></a>安装composer</h2><p>composer是php中管理依赖的工具<a href="https://getcomposer.org/doc/00-intro.md" target="_blank" rel="external">官网</a></p>
+<pre><code>php -r &quot;copy(&apos;https://getcomposer.org/installer&apos;, &apos;composer-setup.php&apos;);&quot;
+php -r &quot;if (hash_file(&apos;SHA384&apos;, &apos;composer-setup.php&apos;) === &apos;92102166af5abdb03f49ce52a40591073a7b859a86e8ff13338cf7db58a19f7844fbc0bb79b2773bf30791e935dbd938&apos;) { echo &apos;Installer verified&apos;; } else { echo &apos;Installer corrupt&apos;; unlink(&apos;composer-setup.php&apos;); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink(&apos;composer-setup.php&apos;);&quot;
+</code></pre><p>这几条命令的意思就是：下载；校验；安装；删除安装包；</p>
+<p>在国内使用composer如果没有翻墙的话，可以使用镜像。<a href="http://pkg.phpcomposer.com/" target="_blank" rel="external">镜像地址</a></p>
+<h2 id="安装postgresql并配置"><a href="#安装postgresql并配置" class="headerlink" title="安装postgresql并配置"></a>安装postgresql并配置</h2><p>直接使用yum安装地方postgres不是最新的，一些新特性无法使用，建议按<a href="http://www.postgresql.org/download/linux/redhat/" target="_blank" rel="external">官网</a>教程安装最新版。</p>
+<pre><code>yum install https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-2.noarch.rpm
+</code></pre><p>完成之后：</p>
+<pre><code>yum install postgresql94-server postgresql94-contrib
+/usr/pgsql-9.4/bin/postgresql94-setup initdb
+systemctl enable postgresql-9.4.service
+systemctl start postgresql-9.4.service
+yum install php70u-pgsql
+</code></pre><p>查看是否安装成功：</p>
+<pre><code>rpm -aq|grep postgres
+</code></pre><p>配置:<br>postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户</p>
 <ul>
-<li>图片库使用谷歌推荐的glide，facebook的fresco也很不错，但是我现在没有时间去研究它；</li>
-<li>网络库使用retrofit+okhttp（缓存使用okhttp自带的缓存处理，<a href="http://www.jianshu.com/p/9c3b4ea108a7" target="_blank" rel="external">可以参考我之前的文章</a>）；</li>
-<li>响应式编程RxJava（给我带来了新的编程思考方式，Everything is a stream.）</li>
-<li>依赖注入的dagger2，刚开始的时候真的是一头雾水，因为不太明白依赖注入是个什么东西，做web开发的同学应该对依赖注入司空见惯了吧。特别是我前一段时间封装sdk，抽离dagger，又开始大量new对象的时候，更是觉得dagger的舒服。</li>
-<li>数据库greendao，你需要建一个java工程写一些配置约束的代码，然后就可以帮你生成dao和model，真是太方便了，没有反射效率也高。</li>
-<li>事件总线使用的是androidEventBus，注意不是greenrobot的eventbus。</li>
-<li>印象笔记的android-job用来处理后台事件，它会根据android版本的不同来调用obScheduler, GcmNetworkManager 或者 AlarmManager。</li>
-<li>还有一些小库如：处理日志logger、键值对存储的Hawk、注解绑定事件和方法的butterKnife，都是很好用的。</li>
-<li>室内定位服务组件：室内定位、室内地图、室内导航，有业务需求的欢迎联系我。</li>
+<li><p>切换到postgres用户：</p>
+<pre><code>sudo su - postgres
+</code></pre></li>
+<li><p>使用psql命令登录PostgreSQL：</p>
+<pre><code>psql
+</code></pre></li>
 </ul>
-<h2 id="一些项目总结"><a href="#一些项目总结" class="headerlink" title="一些项目总结"></a>一些项目总结</h2><ul>
-<li>架构不是来限制你的，是来帮助你的，所以千万不要本末倒置，要活学活用。（在初期基本是邯郸学步，有样学样，即便是感觉这样做很不爽了，也还在坚持这样做。不过后来终于想通了，按照自己的想法理解开始改造，最后结果是：随着业务的不断扩大复杂，终于明白为什么有些要那么做，哈哈，不过也有很多改的对的，总之就是要知行合一！）</li>
-<li>父级P类不用写resume和pause方法，因为很多情况是不需要这两个方法的；</li>
-<li>父级P写setView（设置view接口）和initData，这两个是所有P都要实现的，所以写到父级；为什么不合并这两个，因为对象的初始化在setView中，是一次就够了，但是initData不一定，比如可能要在onNewIntent中调用。</li>
-<li>每个module配置自己的混淆文件,方便管理，在application的pro_guard_rules配置也可以，但是当module不用时appliction会产生冗余配置还要处理。</li>
-<li>每个module配置自己的依赖，为了高内聚，并且打包的时候并不会重复打包不同module之间的相同引用。</li>
-<li>所有的跳转都要走navigator,（navigator是统一处理页面跳转的类）</li>
+<p>这时相当于系统用户postgres以同名数据库用户的身份，登录数据库，这是不用输入密码的。如果一切正常，系统提示符会变为”postgres=#”，表示这时已经进入了数据库控制台。以下的命令都在控制台内完成。</p>
+<ul>
+<li><p>第一件事是使用\password命令，为postgres用户设置一个密码。</p>
+<pre><code>\password postgres
+</code></pre></li>
+<li><p>创建数据库用户dbuser，并指定其为超级用户 </p>
+<pre><code>sudo -u postgres createuser --superuser dbuser
+</code></pre></li>
+<li>登录数据库控制台，设置dbuser用户的密码，完成后退出控制台（postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户）psql命令是登录PostgreSQL控制台</li>
+<li>sudo -u postgres psql<br>\password dbuser<br>\q</li>
+<li>创建数据库exampledb，并指定所有者为dbuser</li>
+<li>sudo -u postgres createdb -O dbuser exampledb</li>
 </ul>
-<h2 id="一些好用的东西"><a href="#一些好用的东西" class="headerlink" title="一些好用的东西"></a>一些好用的东西</h2><ul>
-<li>使用AndroidStudio进行开发，有很多朋友的公司还在使用eclipse开发，听着就替他揪心。<h3 id="AndroidStudio插件"><a href="#AndroidStudio插件" class="headerlink" title="AndroidStudio插件"></a>AndroidStudio插件</h3></li>
-<li>.ignore ，当然同系的软件都可以用，想PhpStorm、IntelliJ、WebStorm等。</li>
-<li>Android  ButterKnife Zelezny （AndroidStudio插件）这个是配合 ButterKnife使用的，让你从findviewbyid中解脱，当然如果你使用databinding的话，也不用findviewbyid了。。</li>
-<li>GsonFormat 让你从写json相关的实体类中解脱</li>
-<li>WakaTime <a href="https://wakatime.com/dashboard" target="_blank" rel="external">这是他的网站</a>，统计你各种编程的时间。<h3 id="AndroidStudio使用"><a href="#AndroidStudio使用" class="headerlink" title="AndroidStudio使用"></a>AndroidStudio使用</h3></li>
-<li>AndroidStudio setting Http Proxy 选择sockets，配置127.0.0.1 1080配合ShadowSocks使用</li>
-<li>配置使用代码模板，团队模板要统一。</li>
-<li>commed+f12 查看结构</li>
-<li>F3 代码加书签，commed+F3</li>
-<li>alt+commed+t 配置代码包裹</li>
-<li>commed+alt+B 查看方法的实现</li>
-<li>commed+U 查看方法的抽象方法（接口写多了，这一对还是很常用的）<h3 id="chrome插件"><a href="#chrome插件" class="headerlink" title="chrome插件"></a>chrome插件</h3></li>
-<li>Postman 一款功能强大的网页调试与发送网页HTTP请求的Chrome插件。</li>
-<li>ChromeADB</li>
-<li>OneTab 可以帮你把打开的很多网页收起来存着，很方便。在windows上用chrome打开太多页面会很占资源变卡，但是在mac上感觉还好。(顺便推荐mac pro做开发，真的好用)</li>
-<li>Octotree 浏览github代码的时候，左侧可以树桩浏览目录结构，十分方便。</li>
-<li>JSONView 格式化json数据</li>
-<li>有道词典 英语不好的，经常查单词太慢，用这个还是很好用的。</li>
-<li>Vysor 同步android手机画面，并且可以控制，记得大学答辩的时候用的一个延迟好大，这个延迟很低。<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3></li>
-<li><a href="www.versioneye.com">versioneye</a> 项目中引用了很多第三方库，他可以提醒你哪些库可以升级了，我的项目所有依赖都配置在dependencies.gradle中，我把这个文件上传上去就识别了，但是库好像不全。。其他项目像php的也都可以使用。</li>
-<li>mac软件推荐到 www.ifunmac.com，虽然是要收费的，但是不贵还是很值的，省去了找软件的时间，并且更新很快。</li>
-<li>No Sleep 让你的mac不sleep</li>
-<li>如果你在找一个地方写博客的话，我推荐简书。</li>
-<li>笔记是积累，博客是沉淀，我一直在用为知笔记，mac版的不如windows的好用，你也可以尝试印象笔记等。我也试过<a href="http://dynalon.github.io/mdwiki/#!index.md" target="_blank" rel="external">mdwiki</a>和<a href="http://tiddlywiki.com/" target="_blank" rel="external">tiddlywiki.com</a>,但是感觉不如为知笔记好用，主要效率就差很多。位置笔记各个平台上也都有客户端让你的体验更好。</li>
-<li><a href="https://get.fabric.io/android?locale=zh-cn" target="_blank" rel="external">fabric</a>Twitter的移动应用开发平台。我在androidStudio装插件一直登陆不上。。</li>
+<p>我是使用Navicat Premium和Postico作为数据库管理软件的。Postico更轻，查看修改数据比较方便，Navicat功能比较强大。</p>
+<h3 id="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："><a href="#数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：" class="headerlink" title="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："></a>数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：</h3><p>修改postgresql.conf和pg_hba.conf这两个文件。</p>
+<p>可以使用locate命令定位这两个文件，updatedb命令可以更新locate文件，如果刚安装完没有找到这两个文件，可以调用这个命令刷新一下。</p>
+<ul>
+<li><p>postgresql.conf配置</p>
+<pre><code>listen_addresses = &apos;*&apos;     //监听所有ip的连接，默认是本机  
+port = 5432             //这个不开也行，默认就是5432端口
+</code></pre></li>
+<li><p>pg_hba.conf配置</p>
+<pre><code>配置host    all         all         0.0.0.0/0             trust
+</code></pre></li>
+<li>如果配置防火墙，记得开放端口</li>
 </ul>
+<p>修改完记得重启。</p>
+<h2 id="安装nginx并配置"><a href="#安装nginx并配置" class="headerlink" title="安装nginx并配置"></a>安装nginx并配置</h2><p><a href="http://nginx.org/en/linux_packages.html" target="_blank" rel="external">nginx官网安装教程</a></p>
+<p>想安装最新nginx，我们需要先添加nginx的库。</p>
+<p>创建文件/etc/yum.repos.d/nginx.repo，并写入以下内容：</p>
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/mainline/centos/OSRELEASE/7/
+gpgcheck=0
+enabled=1    
+</code></pre><p>或者使用rpm安装：</p>
+<pre><code>rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+</code></pre><p>然后使用yum命令安装nginx即可。</p>
+<h2 id="创建一个laravel应用并配置nginx"><a href="#创建一个laravel应用并配置nginx" class="headerlink" title="创建一个laravel应用并配置nginx"></a>创建一个laravel应用并配置nginx</h2><p><a href="https://laravel.com/docs/5.2" target="_blank" rel="external">laravel官方文档</a></p>
+<ul>
+<li>先通过composer下载laravel<code>composer global require &quot;laravel/installer&quot;</code></li>
+<li>创建一个laravel项目<code>composer create-project --prefer-dist laravel/laravel blog</code></li>
+</ul>
+<p>简单的nginx配置使其可以访问laravel应用：<br>配置文件在/etc/nginx/conf.d目录下。一个基本的配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server &#123;&#10;   listen 81;&#10;   server_name www.laravel.com;     &#10;   root /data1/www/laravelapps/app/blog/public;&#10;   index index.php index.html index.htm;&#10;&#10;   location / &#123;&#10;        try_files $uri $uri/ /index.php?$query_string;&#10;   &#125;&#10;&#10;   location ~ \.php$ &#123;&#10;    &#9;fastcgi_pass   127.0.0.1:9000;&#10;    &#9;fastcgi_index  index.php;&#10;      fastcgi_param  SCRIPT_FILENAME  $document_root&#9;&#9;$fastcgi_script_name;&#10;      include        fastcgi_params;&#10;      fastcgi_param   SCRIPT_NAME  $fastcgi_script_name;     &#10;   &#125;&#10;&#125;&#10;&#10;`</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -337,13 +381,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/06/项目总结/">项目总结、阶段小结</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/">CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">never615</a></p>
-        <p><span>发布时间:</span>2016-04-06, 01:30:26</p>
-        <p><span>最后更新:</span>2016-04-06, 01:30:26</p>
+        <p><span>发布时间:</span>2016-05-11, 01:10:13</p>
+        <p><span>最后更新:</span>2016-05-11, 01:10:13</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/06/项目总结/" title="项目总结、阶段小结">http://never615.com/2016/04/06/项目总结/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://never615.com/2016/04/06/项目总结/　　作者: never615" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/" title="CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境">http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/　　作者: never615" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -356,16 +400,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/">
-                    CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/03/17/linux下使用gcc编译so库/">
-                    linux下使用gcc编译so库
+                <a href="/2016/04/06/项目总结/">
+                    项目总结、阶段小结
                 </a>
             </div>
         
@@ -376,7 +414,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#项目架构"><span class="toc-number">1.</span> <span class="toc-text">项目架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三方轮子"><span class="toc-number">2.</span> <span class="toc-text">第三方轮子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些项目总结"><span class="toc-number">3.</span> <span class="toc-text">一些项目总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些好用的东西"><span class="toc-number">4.</span> <span class="toc-text">一些好用的东西</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AndroidStudio插件"><span class="toc-number">4.1.</span> <span class="toc-text">AndroidStudio插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AndroidStudio使用"><span class="toc-number">4.2.</span> <span class="toc-text">AndroidStudio使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chrome插件"><span class="toc-number">4.3.</span> <span class="toc-text">chrome插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">4.4.</span> <span class="toc-text">其他</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CentOs基本环境配置"><span class="toc-number">1.</span> <span class="toc-text">CentOs基本环境配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装php-fpm和php-安装php常用扩展"><span class="toc-number">2.</span> <span class="toc-text">安装php-fpm和php,安装php常用扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装composer"><span class="toc-number">3.</span> <span class="toc-text">安装composer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装postgresql并配置"><span class="toc-number">4.</span> <span class="toc-text">安装postgresql并配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："><span class="toc-number">4.1.</span> <span class="toc-text">数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装nginx并配置"><span class="toc-number">5.</span> <span class="toc-text">安装nginx并配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个laravel应用并配置nginx"><span class="toc-number">6.</span> <span class="toc-text">创建一个laravel应用并配置nginx</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -438,7 +476,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/06/项目总结/" data-title="项目总结、阶段小结" data-url="http://never615.com/2016/04/06/项目总结/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/" data-title="CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境" data-url="http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -462,15 +500,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/" title="上一篇: CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/03/17/linux下使用gcc编译so库/" title="下一篇: linux下使用gcc编译so库">
+            <a href="/2016/04/06/项目总结/" title="下一篇: 项目总结、阶段小结">
                 <i class="fa fa-angle-right"></i>
             </a>
         
