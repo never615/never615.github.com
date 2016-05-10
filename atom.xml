@@ -4,7 +4,7 @@
   <subtitle><![CDATA[创造价值]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-05-10T17:10:13.000Z</updated>
+  <updated>2016-05-10T17:18:40.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境]]></title>
-    <link href="http://never615.com/2016/05/11/CentOS7.0%E4%B8%8B%E6%90%AD%E5%BB%BAnginx+php7+postgresql+laravel/"/>
-    <id>http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel/</id>
-    <published>2016-05-10T17:10:13.000Z</published>
-    <updated>2016-05-10T17:10:13.000Z</updated>
+    <link href="http://never615.com/2016/05/11/CentOS7.0%E4%B8%8B%E6%90%AD%E5%BB%BAnginx+php7+postgresql+laravel%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/"/>
+    <id>http://never615.com/2016/05/11/CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境/</id>
+    <published>2016-05-10T17:18:40.000Z</published>
+    <updated>2016-05-10T17:18:40.000Z</updated>
     <content type="html"><![CDATA[<p>只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。<br><a id="more"></a></p>
 <p>安装步骤大体分为以下几步：</p>
 <ol>
@@ -86,10 +86,14 @@ yum install php70u-pgsql
 <li><p>创建数据库用户dbuser，并指定其为超级用户 </p>
 <pre><code>sudo -u postgres createuser --superuser dbuser
 </code></pre></li>
-<li>登录数据库控制台，设置dbuser用户的密码，完成后退出控制台（postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户）psql命令是登录PostgreSQL控制台</li>
-<li>sudo -u postgres psql<br>\password dbuser<br>\q</li>
-<li>创建数据库exampledb，并指定所有者为dbuser</li>
-<li>sudo -u postgres createdb -O dbuser exampledb</li>
+<li><p>登录数据库控制台，设置dbuser用户的密码，完成后退出控制台（postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户）psql命令是登录PostgreSQL控制台</p>
+<pre><code> sudo -u postgres psql
+\password dbuser
+\q
+</code></pre></li>
+<li><p>创建数据库exampledb，并指定所有者为dbuser</p>
+<pre><code>sudo -u postgres createdb -O dbuser exampledb
+</code></pre></li>
 </ul>
 <p>我是使用Navicat Premium和Postico作为数据库管理软件的。Postico更轻，查看修改数据比较方便，Navicat功能比较强大。</p>
 <h3 id="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："><a href="#数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：" class="headerlink" title="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："></a>数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：</h3><p>修改postgresql.conf和pg_hba.conf这两个文件。</p>
