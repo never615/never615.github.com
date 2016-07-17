@@ -9,18 +9,19 @@
 
   <meta charset="utf-8">
   
-  <title>linux下使用gcc编译so库 | never615</title>
+  <title>android系统类工具的发展情况 | never615</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近公司在做微信端的定位和导航，所以需要云端提供导航和定位功能，为了复用之前客户端的代码，所以我需要把c文件编译成linux下可以运行的so库，记录一下过程。">
+  <meta name="description" content="开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux下使用gcc编译so库">
-<meta property="og:url" content="http://never615.com/2016/03/17/linux下使用gcc编译so库/index.html">
+<meta property="og:title" content="android系统类工具的发展情况">
+<meta property="og:url" content="http://never615.com/2016/07/18/android系统类工具应用的发展情况/index.html">
 <meta property="og:site_name" content="never615">
-<meta property="og:description" content="最近公司在做微信端的定位和导航，所以需要云端提供导航和定位功能，为了复用之前客户端的代码，所以我需要把c文件编译成linux下可以运行的so库，记录一下过程。">
-<meta property="og:updated_time" content="2016-03-17T15:11:00.000Z">
+<meta property="og:description" content="开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?">
+<meta property="og:image" content="http://never615.com/2016/07/18/android系统类工具应用的发展情况/LBE评论.png">
+<meta property="og:updated_time" content="2016-07-17T17:59:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux下使用gcc编译so库">
-<meta name="twitter:description" content="最近公司在做微信端的定位和导航，所以需要云端提供导航和定位功能，为了复用之前客户端的代码，所以我需要把c文件编译成linux下可以运行的so库，记录一下过程。">
+<meta name="twitter:title" content="android系统类工具的发展情况">
+<meta name="twitter:description" content="开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?">
   
     <link rel="alternative" href="/atom.xml" title="never615" type="application/atom+xml">
   
@@ -249,11 +250,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-linux下使用gcc编译so库" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-android系统类工具应用的发展情况" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/17/linux下使用gcc编译so库/" class="article-date">
-      <time datetime="2016-03-17T15:11:00.000Z" itemprop="datePublished">2016-03-17</time>
+      <a href="/2016/07/18/android系统类工具应用的发展情况/" class="article-date">
+      <time datetime="2016-07-17T17:59:38.000Z" itemprop="datePublished">2016-07-18</time>
 </a>
     </div>
   
@@ -266,7 +267,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      linux下使用gcc编译so库
+      android系统类工具的发展情况
     </h1>
   
 
@@ -275,13 +276,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/linux/">linux</a>
+    <a class="article-category-link" href="/categories/随笔/">随笔</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gcc/">gcc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/so库/">so库</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/调查/">调查</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -291,24 +292,62 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>最近公司在做微信端的定位和导航，所以需要云端提供导航和定位功能，为了复用之前客户端的代码，所以我需要把c文件编译成linux下可以运行的so库，记录一下过程。</p>
+        <p>开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?</p>
 <a id="more"></a>
-<p>由于没有搞过，所以遇到问题也不知道具体是哪里的问题，所以就一路乱试。。。最后试了下，可以用。</p>
-<h3 id="用到的一些gcc命令"><a href="#用到的一些gcc命令" class="headerlink" title="用到的一些gcc命令"></a>用到的一些gcc命令</h3><blockquote>
-<p>-shared:指定生成动态连接库,不用该标志外部程序无法连接。相当于一个可执行文件(我开始没加这个，报错找不到main)</p>
-<p>-fPIC:表示编译为位置独立的代码，不用此选项的话编译后的代码是位置相关的所以动态载入时是通过代码拷贝的方式来满足不同进程的需要，而不能达到真正代码段共享的目的。</p>
-<p>-I:指定头文件所在的文件夹</p>
+<h1 id="调查案例"><a href="#调查案例" class="headerlink" title="调查案例:"></a>调查案例:</h1><h2 id="快图"><a href="#快图" class="headerlink" title="快图"></a>快图</h2><p>快图浏览卖给了猎豹.</p>
+<p>快图以其优秀的体验吸引了很多国内外用户,我在用android手机初期刷cm系统的时候就会装快图,当时使用的是htc的hd2,刷了各种rom之后用的较久的是miui,后来因为应用越来越大,在把大多应用移到sd的情况下,Rom还是一直提示不够用,就刷了CM,2.3的系统.14年的时候,我妈还在用,基本应用还是很流畅,最后是按键是在撑不住了换了.</p>
+<p>当时第一次用快图的时候,第一次打开,感觉就是一个字,快,留下了很好的印象,但是后来换几次手机都没有装过快图了,因为系统的已经很好用了.</p>
+<p>快图卖给猎豹还是引起了很多粉丝的不快,包括国外的用户发文吐槽.恩,快图应该沦为了猎豹推广云盘的工具了.</p>
+<p>其开发者郑南岭的介绍:</p>
+<blockquote>
+<p>郑南岭，上海人，千千静听(TTPlayer/thousand tunes player)的唯一开发者。开发的其他产品还有千千浏览,快图浏览,QC 归属地. 千千静听被百度收购,快图卖给了猎豹.</p>
 </blockquote>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h4 id="编译时报错：找不到jni-h"><a href="#编译时报错：找不到jni-h" class="headerlink" title="编译时报错：找不到jni.h"></a>编译时报错：找不到jni.h</h4><p>我用虚拟机装了Ubuntu，输入java没有找到，然后按着提示随便装了一个。。。<br>当然我现在知道装的是OpenJDK(<a href="https://www.zhihu.com/question/19646618" target="_blank" rel="external">OpenJDK和SunJDK的区别</a>)，google也决定在android N中使用OpenJDK了(<a href="http://www.infoq.com/cn/news/2016/01/android-openjdk" target="_blank" rel="external">相关报道</a>)。。</p>
-<p>所以我又下载了SunJDK，编译的时候要引用相关文件,加如下命令</p>
-<pre><code>-I/[jdk目录]/include -I/[jdk目录]/include/linux
-</code></pre><p>[jdk目录]/include是jni.h所在目录；<br>[jdk目录]/include/linux是jni_md.h所在目录</p>
-<h4 id="编译报错：找不到main"><a href="#编译报错：找不到main" class="headerlink" title="编译报错：找不到main"></a>编译报错：找不到main</h4><p>没有加命令 -shared(命令介绍参考上面)</p>
-<h4 id="编译时报错：找不到math-h"><a href="#编译时报错：找不到math-h" class="headerlink" title="编译时报错：找不到math.h"></a>编译时报错：找不到math.h</h4><p>使用math.h中声明的库函数，gcc命令行必须加-lm选项，因为数学函数位于libm.so库文件中（这些库文件通常位于/lib目录下），-lm选项告诉编译器，我们程序中用到的数学函数要到这个库文件里找。</p>
-<p>我最后是把c文件一个一个编译成.o然后，然后在编译成.so的，因为怕出错，不知道哪个文件的问题。。。当然也可以直接一句话如下：</p>
-<pre><code>gcc [.c文件，多个用空格隔开] -fPIC -shared -I/usr/xxx/include -I/usr/xxx/include/linux -lm -o libtest.so
-</code></pre><p>编译成.o命令:gcc -c test.c</p>
-<p>.o编译成.so:gcc test.o -o test(默认会添加lib前缀和.so后缀)</p>
+<p><a href="http://www.qishu.co/61e7509405764b03af567af08f83c008#傅盛战队对谈郑南岭 - 千千静听、快图创始人" target="_blank" rel="external">对谈郑南岭</a></p>
+<h2 id="猎豹移动"><a href="#猎豹移动" class="headerlink" title="猎豹移动"></a>猎豹移动</h2><p>猎豹移动今年5.19发布16年Q1业绩,并做出了低于预期的第二季度预测,股价大幅下跌.猎豹在过去5年总收入增长均超过100%,2015年收入中海外收入占比50%.2016Q1海外收入增长115.6%,移动收入占比超过七成.</p>
+<p>傅盛说明了Q2大幅下调的三个原因:</p>
+<ol>
+<li>在国际市场，在第三方广告平台上的合作伙伴中，有一些的eCPM（effective cost per mille，指的就是每一千次展示可以获得的广告收入）下降；</li>
+<li>在扩大直销（direct sales）方面取得的进展比预期的慢；</li>
+<li>在执行内容产品战略方面耗费的时间比预期长。</li>
+</ol>
+<p>工具类应用的发展在全球范围内还是有空间的,但是工具类应用发展的局限也很大,猎豹的变现道路是有瓶颈的,在去年已经遇到.猎豹目前已经在用户价值较高的内容产品布局超过半年,如游戏别踩白块/musical.ly和新推的头牌;在VR和机器人领域提前布局;和紫牛基金合作. </p>
+<p>猎豹已经看到工具类应用的瓶颈,并积极转型.</p>
+<h3 id="主要产品"><a href="#主要产品" class="headerlink" title="主要产品"></a>主要产品</h3><ul>
+<li>musical.ly :短视频应用,猎豹内容产品,登上全美ios总榜第一.<a href="http://36kr.com/p/5041108.html" target="_blank" rel="external">为什么一个中国团队做的短视频 APP 登上了全美 iOS 总榜第一？</a></li>
+<li>别踩白块:轻游戏.</li>
+<li>头牌:网红短视频应用</li>
+<li>工具类应用产品线,有名的有猎豹清理大师.</li>
+</ul>
+<h3 id="盈利方式"><a href="#盈利方式" class="headerlink" title="盈利方式"></a>盈利方式</h3><ul>
+<li>新推内容产品,提升用户活跃度,需要时间见效果.</li>
+<li>加强全球直销运营能力</li>
+<li>加速移动广告收入增长 </li>
+</ul>
+<h2 id="LBE"><a href="#LBE" class="headerlink" title="LBE"></a>LBE</h2><h3 id="主要产品-1"><a href="#主要产品-1" class="headerlink" title="主要产品"></a>主要产品</h3><ul>
+<li>安全大师</li>
+<li>加速大师</li>
+<li>平行空间</li>
+</ul>
+<h3 id="豌豆荚上安全大师最近一组评价"><a href="#豌豆荚上安全大师最近一组评价" class="headerlink" title="豌豆荚上安全大师最近一组评价"></a>豌豆荚上安全大师最近一组评价</h3><img src="/2016/07/18/android系统类工具应用的发展情况/LBE评论.png" alt="LBE评论.png" title="">
+<p>LBE和很多rom厂家合作,这也是很多工具类应用目前的情况.如:360,猎豹清理大师,百度手机卫士,腾讯管家.LBE的股东有阿里,腾讯,小米…</p>
+<h2 id="豌豆荚"><a href="#豌豆荚" class="headerlink" title="豌豆荚"></a>豌豆荚</h2><p>豌豆荚是我最喜欢的应用市场,也是我一直使用android手机要下载的,因为我在使用android初期,就经常在市场上找一些好玩的应用.后来用了rom自带的市场,比如魅族的,发现排名靠前的应用都是推广的,而豌豆荚还是一直会推荐优秀的应用的.</p>
+<p>并且作为一个开发者,我也感觉到豌豆荚上的自然流量会好一些.</p>
+<p>7月5日豌豆荚移动分发业务并入阿里移动.</p>
+<h2 id="UC"><a href="#UC" class="headerlink" title="UC"></a>UC</h2><p>2015年8月，UC就推出了基于浏览器的个性化信息流产品——UC头条，但此次推出的“UC订阅号”后，UC将帮助订阅号完成“增粉、变现和运营”。浏览器手握用户及移动互联网重要入口资源，进军内容分发变得水到渠成，据艾媒咨询数据显示，在2015年中国移动资讯行业活跃用户分布方面，腾讯新闻以37.5%的占比排名第一；网易新闻和UC头条以32.3%和31.3%的占比分别排名二、三位。UC头条跻身内容分发市场前三。</p>
+<h2 id="360"><a href="#360" class="headerlink" title="360"></a>360</h2><p>转型IOT.</p>
+<p>360出去的李涛创办的apus,专注海外市场;,做系统工具应用,最有名的是用户系统.apus在20个月内获得9亿用户,并且主要是海外用户.</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>说一下我目前的情况,目前主要使用的手机是ios,装了墨迹天气和中华万年历,如果我用的是小米和魅族的话是不会装他们的.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>系统工具类app(安全管家类\桌面\市场等)的国内用户量未来趋势是逐年下降的.</p>
+<ol>
+<li>随着时间的推移,从android2.+到4.+到现在的5.+和6.+,定制rom自带的工具应用从无到有已经越来越好用,和第三方的差距逐渐缩小,并且通过和第三方合作,只是用第三方的服务在自己的rom中.</li>
+<li>rom携带的应用整合度更高,即便使用性上有差距,但是随着差距的缩小,用户渐渐不在下载各种第三方替代品,或者下载第三方替代品的趋势逐渐下降.</li>
+<li>目前工具类应用的主要市场应该是在于定制化较低的rom上.</li>
+<li>现阶段工具类应用想继续取得用户增长,我觉得是国际化,apus的发展就是很好的例子.</li>
+<li>和rom厂商合作也是一条路.但是也要看厂商是否愿意合作还是想自己做,rom厂商一开始就在自己做市场应用,尽管做的比豌豆荚难用很多很多,所以有些应用rom厂商还是想自己做.合作的话怎么合作利益怎么共享,工具类应用不像游戏,很好变现,谈不好合作还不如自己做.<br>我的观点是随着时间的发展,工具类大多数是原生吃定制rom,定制rom吃工具应用.原生吃定制rom这事还早,后还不知道会怎么样,定制rom吃工具类应用我觉得是一定的.三星现在也开始发力中国本土化了.</li>
+</ol>
+<blockquote>
+<p>下一篇研究互联网公司进军海外的情况.</p>
+</blockquote>
 
       
     </div>
@@ -317,13 +356,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/03/17/linux下使用gcc编译so库/">linux下使用gcc编译so库</a></p>
+        <p><span>本文标题:</span><a href="/2016/07/18/android系统类工具应用的发展情况/">android系统类工具的发展情况</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">never615</a></p>
-        <p><span>发布时间:</span>2016-03-17, 23:11:00</p>
-        <p><span>最后更新:</span>2016-03-17, 23:11:00</p>
+        <p><span>发布时间:</span>2016-07-18, 01:59:38</p>
+        <p><span>最后更新:</span>2016-07-18, 01:59:37</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/03/17/linux下使用gcc编译so库/" title="linux下使用gcc编译so库">http://never615.com/2016/03/17/linux下使用gcc编译so库/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://never615.com/2016/03/17/linux下使用gcc编译so库/　　作者: never615" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/18/android系统类工具应用的发展情况/" title="android系统类工具的发展情况">http://never615.com/2016/07/18/android系统类工具应用的发展情况/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://never615.com/2016/07/18/android系统类工具应用的发展情况/　　作者: never615" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -335,16 +374,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/04/06/项目总结/">
-                    项目总结、阶段小结
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/02/26/个人小站建站记/">
-                    个人小站建站记
+                <a href="/2016/05/28/CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境/">
+                    CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境
                 </a>
             </div>
         
@@ -355,7 +388,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#用到的一些gcc命令"><span class="toc-number">1.</span> <span class="toc-text">用到的一些gcc命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遇到的问题"><span class="toc-number">2.</span> <span class="toc-text">遇到的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#编译时报错：找不到jni-h"><span class="toc-number">2.1.</span> <span class="toc-text">编译时报错：找不到jni.h</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#编译报错：找不到main"><span class="toc-number">2.2.</span> <span class="toc-text">编译报错：找不到main</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#编译时报错：找不到math-h"><span class="toc-number">2.3.</span> <span class="toc-text">编译时报错：找不到math.h</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#调查案例"><span class="toc-number">1.</span> <span class="toc-text">调查案例:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#快图"><span class="toc-number">1.1.</span> <span class="toc-text">快图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#猎豹移动"><span class="toc-number">1.2.</span> <span class="toc-text">猎豹移动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要产品"><span class="toc-number">1.2.1.</span> <span class="toc-text">主要产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#盈利方式"><span class="toc-number">1.2.2.</span> <span class="toc-text">盈利方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LBE"><span class="toc-number">1.3.</span> <span class="toc-text">LBE</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主要产品-1"><span class="toc-number">1.3.1.</span> <span class="toc-text">主要产品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#豌豆荚上安全大师最近一组评价"><span class="toc-number">1.3.2.</span> <span class="toc-text">豌豆荚上安全大师最近一组评价</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#豌豆荚"><span class="toc-number">1.4.</span> <span class="toc-text">豌豆荚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UC"><span class="toc-number">1.5.</span> <span class="toc-text">UC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#360"><span class="toc-number">1.6.</span> <span class="toc-text">360</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">1.7.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">1.8.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -412,7 +445,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"linux下使用gcc编译so库　| never615　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"android系统类工具的发展情况　| never615　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -428,7 +461,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/03/17/linux下使用gcc编译so库/" data-title="linux下使用gcc编译so库" data-url="http://never615.com/2016/03/17/linux下使用gcc编译so库/"></div>
+    <div class="ds-thread" data-thread-key="2016/07/18/android系统类工具应用的发展情况/" data-title="android系统类工具的发展情况" data-url="http://never615.com/2016/07/18/android系统类工具应用的发展情况/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -452,15 +485,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/04/06/项目总结/" title="上一篇: 项目总结、阶段小结">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/02/26/个人小站建站记/" title="下一篇: 个人小站建站记">
+            <a href="/2016/05/28/CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境/" title="下一篇: CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境">
                 <i class="fa fa-angle-right"></i>
             </a>
         
