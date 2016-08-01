@@ -4,7 +4,7 @@
   <subtitle><![CDATA[创造价值]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://never615.com/"/>
-  <updated>2016-07-17T18:04:31.000Z</updated>
+  <updated>2016-08-01T14:48:35.000Z</updated>
   <id>http://never615.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[android系统类工具的发展情况]]></title>
-    <link href="http://never615.com/2016/07/18/android%E7%B3%BB%E7%BB%9F%E7%B1%BB%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8%E7%9A%84%E5%8F%91%E5%B1%95%E6%83%85%E5%86%B5/"/>
-    <id>http://never615.com/2016/07/18/android系统类工具应用的发展情况/</id>
-    <published>2016-07-17T18:04:32.000Z</published>
-    <updated>2016-07-17T18:04:31.000Z</updated>
+    <link href="http://never615.com/2016/08/01/android%E7%B3%BB%E7%BB%9F%E7%B1%BB%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8%E7%9A%84%E5%8F%91%E5%B1%95%E6%83%85%E5%86%B5/"/>
+    <id>http://never615.com/2016/08/01/android系统类工具应用的发展情况/</id>
+    <published>2016-08-01T14:48:35.000Z</published>
+    <updated>2016-08-01T14:48:35.000Z</updated>
     <content type="html"><![CDATA[<p>开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?</p>
 <a id="more"></a>
 <h1 id="调查案例"><a href="#调查案例" class="headerlink" title="调查案例:"></a>调查案例:</h1><h2 id="快图"><a href="#快图" class="headerlink" title="快图"></a>快图</h2><p>快图浏览卖给了猎豹.</p>
@@ -56,7 +56,7 @@
 <li>加速大师</li>
 <li>平行空间</li>
 </ul>
-<h3 id="豌豆荚上安全大师最近一组评价"><a href="#豌豆荚上安全大师最近一组评价" class="headerlink" title="豌豆荚上安全大师最近一组评价"></a>豌豆荚上安全大师最近一组评价</h3><img src="/2016/07/18/android系统类工具应用的发展情况/LBE评论.png" alt="LBE评论.png" title="">
+<h3 id="豌豆荚上安全大师最近一组评价"><a href="#豌豆荚上安全大师最近一组评价" class="headerlink" title="豌豆荚上安全大师最近一组评价"></a>豌豆荚上安全大师最近一组评价</h3><img src="/2016/08/01/android系统类工具应用的发展情况/LBE评论.png" alt="LBE评论.png" title="">
 <p>LBE和很多rom厂家合作,这也是很多工具类应用目前的情况.如:360,猎豹清理大师,百度手机卫士,腾讯管家.LBE的股东有阿里,腾讯,小米…</p>
 <h2 id="豌豆荚"><a href="#豌豆荚" class="headerlink" title="豌豆荚"></a>豌豆荚</h2><p>豌豆荚是我最喜欢的应用市场,也是我一直使用android手机要下载的,因为我在使用android初期,就经常在市场上找一些好玩的应用.后来用了rom自带的市场,比如魅族的,发现排名靠前的应用都是推广的,而豌豆荚还是一直会推荐优秀的应用的.</p>
 <p>并且作为一个开发者,我也感觉到豌豆荚上的自然流量会好一些.</p>
@@ -73,9 +73,6 @@
 <li>现阶段工具类应用想继续取得用户增长,我觉得是国际化,apus的发展就是很好的例子.</li>
 <li>和rom厂商合作也是一条路.但是也要看厂商是否愿意合作还是想自己做,rom厂商一开始就在自己做市场应用,尽管做的比豌豆荚难用很多很多,所以有些应用rom厂商还是想自己做.合作的话怎么合作利益怎么共享,工具类应用不像游戏,很好变现,谈不好合作还不如自己做.<br>我的观点是随着时间的发展,工具类大多数是原生吃定制rom,定制rom吃工具应用.原生吃定制rom这事还早,后还不知道会怎么样,定制rom吃工具类应用我觉得是一定的.三星现在也开始发力中国本土化了.</li>
 </ol>
-<blockquote>
-<p>下一篇研究互联网公司进军海外的情况.</p>
-</blockquote>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>开荒初期,用户有很多需求,android系统本身和rom厂商没有精力一下子做好这么多方面,于是各种类型的系统工具应用百花齐放,解决用户的的需求,提升用户的体验,但是随着时间的推移,对于这些基本需求,rom本身已经解决的越来越好,和第三方优秀应用的差距越来越小,用户下载第三方应用的动力越来越小,这些应用又该何去何从?</p>]]>
@@ -87,134 +84,6 @@
       <category term="随笔" scheme="http://never615.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔" scheme="http://never615.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境]]></title>
-    <link href="http://never615.com/2016/05/28/CentOS7.0%E4%B8%8B%E6%90%AD%E5%BB%BAnginx+php7+postgresql+laravel%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/"/>
-    <id>http://never615.com/2016/05/28/CentOS7.0下搭建nginx+php7+postgresql+laravel的运行环境/</id>
-    <published>2016-05-28T04:37:37.000Z</published>
-    <updated>2016-05-28T04:37:37.000Z</updated>
-    <content type="html"><![CDATA[<p>只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。<br>这些东西配置下来给我最大的感悟就是,首先去查官网资料…<br><a id="more"></a></p>
-<p>安装步骤大体分为以下几步：</p>
-<ol>
-<li>基本环境配置</li>
-<li>安装php-fpm（同时安装了php） </li>
-<li>安装composer</li>
-<li>安装postgresql并配置</li>
-<li>安装nginx</li>
-<li>创建一个laravel应用并配置nginx</li>
-</ol>
-<h2 id="CentOs基本环境配置"><a href="#CentOs基本环境配置" class="headerlink" title="CentOs基本环境配置"></a>CentOs基本环境配置</h2><p>在CentOS上管理软件可以使用yum作为包管理工具，可以用命令查询、删除、下载、安装、删除系统上的软件。</p>
-<p>yum的使用：<a href="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" target="_blank" rel="external">yum参考手册</a></p>
-<p>系统官方的资源库提供的软件不能满足我们的需求，比如搜索php70u，会提示NO Matches found，所以我们要添加额外的资源库。</p>
-<p>在这里可以找到ius的包，<a href="https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/repoview/ius-release.html" target="_blank" rel="external">https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/repoview/ius-release.html</a>。</p>
-<p>复制包地址，使用wget下载，会下载到当前目录。</p>
-<pre><code>wget https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm
-</code></pre><p>然后使用命令安装：</p>
-<pre><code>rpm -ivh ius-release-1.0-10.ius.el6.noarch.rpm epel-release-6-5.noarch.rpm
-</code></pre><p>如果安装失败，提示你安装epel,就用yum search epel，然后安装。</p>
-<h2 id="安装php-fpm和php-安装php常用扩展"><a href="#安装php-fpm和php-安装php常用扩展" class="headerlink" title="安装php-fpm和php,安装php常用扩展"></a>安装php-fpm和php,安装php常用扩展</h2><p>搜索php-fpm：</p>
-<pre><code>yum search php70u-fpm
-</code></pre><p>安装，因为yum会自动解决软件之间的依赖，所以会自动安装php</p>
-<pre><code>yum install php70u-fpm
-</code></pre><p>查看php-fpm的状态：</p>
-<pre><code>systemctl status php-fpm
-</code></pre><p>启动php——fpm:</p>
-<pre><code>systemctl start php-fpm
-</code></pre><p>设置开机启动：</p>
-<pre><code>systemctl enable php-fpm
-</code></pre><p>安装php常用的扩展：</p>
-<pre><code>yum install php70u-gd php70u-mysqlnd php70u-pdo php70u-mcrypt php70u-mbstring php70u-json php70u-cli -y
-</code></pre><p>安装完成需要重新加载php-fpm:</p>
-<pre><code>systemctl reload php-fpm
-</code></pre><h2 id="安装composer"><a href="#安装composer" class="headerlink" title="安装composer"></a>安装composer</h2><p>composer是php中管理依赖的工具<a href="https://getcomposer.org/doc/00-intro.md" target="_blank" rel="external">官网</a></p>
-<pre><code>php -r &quot;copy(&apos;https://getcomposer.org/installer&apos;, &apos;composer-setup.php&apos;);&quot;
-php -r &quot;if (hash_file(&apos;SHA384&apos;, &apos;composer-setup.php&apos;) === &apos;92102166af5abdb03f49ce52a40591073a7b859a86e8ff13338cf7db58a19f7844fbc0bb79b2773bf30791e935dbd938&apos;) { echo &apos;Installer verified&apos;; } else { echo &apos;Installer corrupt&apos;; unlink(&apos;composer-setup.php&apos;); } echo PHP_EOL;&quot;
-php composer-setup.php
-php -r &quot;unlink(&apos;composer-setup.php&apos;);&quot;
-</code></pre><p>这几条命令的意思就是：下载；校验；安装；删除安装包；</p>
-<p>在国内使用composer如果没有翻墙的话，可以使用镜像。<a href="http://pkg.phpcomposer.com/" target="_blank" rel="external">镜像地址</a></p>
-<h2 id="安装postgresql并配置"><a href="#安装postgresql并配置" class="headerlink" title="安装postgresql并配置"></a>安装postgresql并配置</h2><p>直接使用yum安装地方postgres不是最新的，一些新特性无法使用，建议按<a href="http://www.postgresql.org/download/linux/redhat/" target="_blank" rel="external">官网</a>教程安装最新版。</p>
-<pre><code>yum install https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-centos95-9.5-2.noarch.rpm
-</code></pre><p>完成之后：</p>
-<pre><code>yum install postgresql94-server postgresql94-contrib
-/usr/pgsql-9.4/bin/postgresql94-setup initdb
-systemctl enable postgresql-9.4.service
-systemctl start postgresql-9.4.service
-yum install php70u-pgsql
-</code></pre><p>查看是否安装成功：</p>
-<pre><code>rpm -aq|grep postgres
-</code></pre><p>配置:<br>postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户</p>
-<ul>
-<li><p>切换到postgres用户：</p>
-<pre><code>sudo su - postgres
-</code></pre></li>
-<li><p>使用psql命令登录PostgreSQL：</p>
-<pre><code>psql
-</code></pre></li>
-</ul>
-<p>这时相当于系统用户postgres以同名数据库用户的身份，登录数据库，这是不用输入密码的。如果一切正常，系统提示符会变为”postgres=#”，表示这时已经进入了数据库控制台。以下的命令都在控制台内完成。</p>
-<ul>
-<li><p>第一件事是使用\password命令，为postgres用户设置一个密码。</p>
-<pre><code>\password postgres
-</code></pre></li>
-<li><p>创建数据库用户dbuser，并指定其为超级用户 </p>
-<pre><code>sudo -u postgres createuser --superuser dbuser
-</code></pre></li>
-<li><p>登录数据库控制台，设置dbuser用户的密码，完成后退出控制台（postgres安装完成之后会生成名为postgres的数据库、数据库用户和linux系统用户）psql命令是登录PostgreSQL控制台</p>
-<pre><code> sudo -u postgres psql
-\password dbuser
-\q
-</code></pre></li>
-<li><p>创建数据库exampledb，并指定所有者为dbuser</p>
-<pre><code>sudo -u postgres createdb -O dbuser exampledb
-</code></pre></li>
-</ul>
-<p>我是使用Navicat Premium和Postico作为数据库管理软件的。Postico更轻，查看修改数据比较方便，Navicat功能比较强大。</p>
-<h3 id="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："><a href="#数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：" class="headerlink" title="数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下："></a>数据库直接安装完成之后是不能远程访问的，如果需要远程访问的话，需要配置一下：</h3><p>修改postgresql.conf和pg_hba.conf这两个文件。</p>
-<p>可以使用locate命令定位这两个文件，updatedb命令可以更新locate文件，如果刚安装完没有找到这两个文件，可以调用这个命令刷新一下。</p>
-<ul>
-<li><p>postgresql.conf配置</p>
-<pre><code>listen_addresses = &apos;*&apos;     //监听所有ip的连接，默认是本机  
-port = 5432             //这个不开也行，默认就是5432端口
-</code></pre></li>
-<li><p>pg_hba.conf配置</p>
-<pre><code>配置host    all         all         0.0.0.0/0             trust
-</code></pre></li>
-<li>如果配置防火墙，记得开放端口</li>
-</ul>
-<p>修改完记得重启。</p>
-<h2 id="安装nginx并配置"><a href="#安装nginx并配置" class="headerlink" title="安装nginx并配置"></a>安装nginx并配置</h2><p><a href="http://nginx.org/en/linux_packages.html" target="_blank" rel="external">nginx官网安装教程</a></p>
-<p>想安装最新nginx，我们需要先添加nginx的库。</p>
-<p>创建文件/etc/yum.repos.d/nginx.repo，并写入以下内容：</p>
-<pre><code>[nginx]
-name=nginx repo
-baseurl=http://nginx.org/packages/mainline/centos/OSRELEASE/7/
-gpgcheck=0
-enabled=1    
-</code></pre><p>或者使用rpm安装：</p>
-<pre><code>rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-</code></pre><p>然后使用yum命令安装nginx即可。</p>
-<h2 id="创建一个laravel应用并配置nginx"><a href="#创建一个laravel应用并配置nginx" class="headerlink" title="创建一个laravel应用并配置nginx"></a>创建一个laravel应用并配置nginx</h2><p><a href="https://laravel.com/docs/5.2" target="_blank" rel="external">laravel官方文档</a></p>
-<ul>
-<li>先通过composer下载laravel<code>composer global require &quot;laravel/installer&quot;</code></li>
-<li>创建一个laravel项目<code>composer create-project --prefer-dist laravel/laravel blog</code></li>
-</ul>
-<p>简单的nginx配置使其可以访问laravel应用：<br>配置文件在/etc/nginx/conf.d目录下。一个基本的配置如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server &#123;&#10;   listen 81;&#10;   server_name www.laravel.com;     &#10;   root /data1/www/laravelapps/app/blog/public;&#10;   index index.php index.html index.htm;&#10;&#10;   location / &#123;&#10;        try_files $uri $uri/ /index.php?$query_string;&#10;   &#125;&#10;&#10;   location ~ \.php$ &#123;&#10;    &#9;fastcgi_pass   127.0.0.1:9000;&#10;    &#9;fastcgi_index  index.php;&#10;      fastcgi_param  SCRIPT_FILENAME  $document_root&#9;&#9;$fastcgi_script_name;&#10;      include        fastcgi_params;&#10;      fastcgi_param   SCRIPT_NAME  $fastcgi_script_name;     &#10;   &#125;&#10;&#125;&#10;&#10;`</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>只讲述如何配置一个laravel应用可以运行的基本环境，其他的如权限管理、禁止root远程登录、ssh密码登录、防火墙等不涉及。<br>这些东西配置下来给我最大的感悟就是,首先去查官网资料…<br>]]>
-    
-    </summary>
-    
-      <category term="centos" scheme="http://never615.com/tags/centos/"/>
-    
-      <category term="web环境搭建" scheme="http://never615.com/tags/web%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    
-      <category term="web" scheme="http://never615.com/categories/web/"/>
     
   </entry>
   
